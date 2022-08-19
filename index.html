@@ -10,6 +10,35 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <script>
+        var show = true;
+        function showMenu()
+        {
+            
+            if(show==true)
+            {
+                const li = document.getElementById("ul-li");
+                li.classList.remove('nav-mobile-s');
+                li.classList.add("nav-mobile-s-auto");
+                li.classList.add("nav-mobile-s>ul");
+                console.log("list is now going to show")
+                show=false;      
+            }
+            else
+            {
+                const li = document.getElementById("ul-li");
+                li.classList.remove("nav-mobile-s-auto");
+                li.classList.remove("nav-mobile-s>ul");
+                li.classList.add("nav-mobile-s");
+                console.log("list closing");
+                show=true;            
+            }
+            
+
+
+
+        }
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -18,6 +47,9 @@
         <img src="./Src/logo.png" />
       </span>
 
+
+
+      
       <nav>
         <ul style="display: flex">
           <div>
@@ -37,6 +69,22 @@
           </div>
         </ul>
       </nav>
+
+      <!-- MOBILE HAMBURGER CONTAINER -->
+      <div class="burger-mobile">
+        <i onclick="showMenu()" style="font-size: 2.5em;" class="bi bi-list"></i>
+
+        <div id="ul-li" class="">
+            <ul style="list-style-type: none; font-size:2em; text-align:center;">
+                <li style="padding-top: 1em;">Home</li>
+                <li style="padding-top: 0.5em;">Contract</li>
+                <li style="padding-top: 0.5em;">AboutUs</li>
+            </ul>
+        </div>
+
+      </div>
+
+
     </header>
 
     <section class="main-sec">

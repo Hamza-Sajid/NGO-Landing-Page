@@ -56,7 +56,7 @@ header>nav>div>li {
 
 header>nav {
     position: relative;
-    left: 5%;
+    left: 10%;
 }
 
 header>nav>ul>div>li>a {
@@ -80,10 +80,76 @@ header>nav>ul {
     display: inline;
 }
 
+/* #ul-li
+{
+    display: none;
+} */
+
+
+
 @media (max-width:768px) {
     header>span>img {
-        display: none;
+
     }
+
+    #ul-li
+    {
+        display: none;   
+    }
+    .burger-mobile
+    {
+        display: block;
+        width: 3em;
+        height: 3em;
+        margin: auto;
+        position: absolute;
+        left: 21em;
+        top: 1em;
+    }
+   
+
+    .nav-mobile-s
+    {
+        position: relative;
+        
+        width: 24em;
+        height: 20em;
+        background:white;
+        border-radius: 10px;
+        left: -21em;
+        display: block !important;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    .nav-mobile-s-auto
+    {
+        position: relative;
+        top: 4em;
+        width: 24em;
+        height: 12em;
+        background:white;
+        border-radius: 10px;
+        left: -20.5em;   
+    }
+    
+
+    .nav-mobile-s>ul
+    {
+        list-style-type: none;
+    }
+    .nav-mobile-s>ul>li
+    {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        text-align: center;
+    }
+    /* .nav-mobile-s
+    {
+        width: 12em;
+        height: 3em;
+        background-color: red;
+        
+    } */
 
     header {
 
@@ -91,15 +157,14 @@ header>nav>ul {
         background: #f9f2ea;
         flex-wrap: wrap;
         height: 5em;
-        overflow: hidden;
         border-bottom: 2px solid #00715d;
+        
     }
 
     span {}
 
     header>nav {
-        left: -3%;
-        position: relative;
+       display: none;
     }
 
     header>nav>ul {
@@ -271,6 +336,7 @@ header>nav>ul {
 
     .support-1>p {
         width: 13em;
+        margin-left: -1em;
     }
 
     .support-2>img {
@@ -300,7 +366,7 @@ header>nav>ul {
     .aboutus {
         flex-wrap: wrap;
         width: 100%;
-        padding: 1em !important;
+        padding: 2em !important;
         direction: ltr;
     }
 
@@ -314,17 +380,20 @@ header>nav>ul {
 
     .aboutus-1>img {
         width: 20em !important;
+        height: 213px;
         position: relative;
         left: 3em;
         z-index: 0;
-        border-top-right-radius: 20px !important;
-        border-top-left-radius: 20px !important;
+        border-radius: 0px!important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
     }
 
     .aboutus-2 {
-        width: 22em !important;
+        width: 100%!important;
         z-index: 99;
         margin-bottom: 1em;
+        margin-left: 0px!important;
     }
 
     .donate-text {
