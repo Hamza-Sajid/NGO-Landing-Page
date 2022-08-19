@@ -1,0 +1,820 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Noto+Sans:wght@500&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #f9f2ea;
+}
+
+header {
+    height: 5em;
+    background: linear-gradient(to right, #f9f2ea 50%, #fdd65b 50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr {
+    color: gray;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+a {
+    font-family: 'Jost', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header>span>img {
+    width: 200px;
+    display: inline;
+    padding: 0.4rem;
+}
+
+header>nav>div>li {
+    display: inline;
+}
+
+header>nav {
+    position: relative;
+    left: 5%;
+}
+
+header>nav>ul>div>li>a {
+    text-decoration: none;
+    font-size: 2em;
+    margin-left: 1em;
+    color: black;
+}
+
+header>nav>ul>div>li>a:hover {
+    background-color: #00715d;
+
+    color: white;
+
+
+}
+
+header>nav>ul {
+    list-style-type: none;
+
+    display: inline;
+}
+
+@media (max-width:768px) {
+    header>span>img {
+        display: none;
+    }
+
+    header {
+
+        width: 100%;
+        background: #f9f2ea;
+        flex-wrap: wrap;
+        height: 5em;
+        overflow: hidden;
+        border-bottom: 2px solid #00715d;
+    }
+
+    span {}
+
+    header>nav {
+        left: -3%;
+        position: relative;
+    }
+
+    header>nav>ul {
+        width: 100%;
+
+    }
+
+    header>nav>ul>div>li>a {
+        background-color: #00715d;
+        color: white;
+        padding: 10px;
+        font-size: 1.2em;
+        position: relative;
+    }
+
+    header>nav>ul {}
+
+    .main-sec-p1>h2 {
+        width: 100%;
+        padding: 1em !important;
+    }
+}
+
+
+
+/* --------------------- */
+/* MAIN SECTION CODE */
+
+.main-sec {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main-sec-p1 {
+    width: 50%;
+}
+
+.main-sec-p1>h2 {
+    font-size: 3rem;
+    padding: 2em;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.main-sec-p1>p {
+    width: 80%;
+    margin-left: 4em;
+    margin-top: -3em;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.main-sec-p1>button {
+    width: 6em;
+    height: 5em;
+    background-color: #1a574b;
+    border: none;
+    color: white;
+    width: 30%;
+    margin-top: 4em;
+    margin-left: 7em;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.main-sec-p1>button:hover {
+    background-color: #fdd65b;
+    color: black;
+    cursor: grab;
+}
+
+.main-sec-p1>img {
+    position: relative;
+    top: 2em;
+    width: 30%;
+    margin-left: 4em;
+}
+
+.main-sec-p2 {
+    background-color: #fdd65b;
+    width: 50%;
+    height: 100%;
+}
+
+.main-sec-p2>img {
+    width: 80%;
+    position: relative;
+    top: 0.3em;
+    margin-top: 4em;
+}
+
+@media (max-width:768px) {
+    .main-sec-p1 {
+        width: 100%;
+    }
+
+
+    .main-sec-p1>p {
+        display: block;
+        padding: 0;
+        margin: 0;
+        margin: auto;
+    }
+
+    .main-sec-p1>img {
+        display: none;
+    }
+
+    .main-sec-p1>button {
+        display: block;
+        margin: auto;
+        margin-top: 2em;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+
+    .main-sec-p2 {
+        width: 100%;
+    }
+
+    .main-sec-p2>img {
+        width: 100%;
+        margin-top: 0em;
+        height: 22em;
+        position: relative;
+        top: -0.5em;
+    }
+
+}
+
+.social-links {
+    display: block;
+    position: relative;
+    left: 20%;
+    top: 5%;
+    margin: auto;
+    font-size: 1.3em;
+}
+
+/* //Responsive code base */
+
+@media (max-width:768px) {
+
+    .main-sec-p1>button {
+        height: 3em;
+    }
+
+    .main-sec-p2>img {
+        margin-bottom: -1em;
+
+    }
+
+    .stats {
+        height: auto !important;
+    }
+
+    .social-links {
+        left: 0%;
+        top: 2%;
+        margin-bottom: 1em;
+    }
+
+    .support-1>h1 {
+        font-size: 3em !important;
+    }
+
+    .support-1>p {
+        width: 13em;
+    }
+
+    .support-2>img {
+        display: none;
+    }
+
+    .support-images {
+        flex-wrap: wrap;
+        position: relative;
+
+        left: -1em;
+    }
+
+    .support-divs {
+        margin-top: 2em;
+        margin-left: 0px;
+    }
+
+    .support-images>div>img {
+        width: 180% !important;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    .aboutus {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 1em !important;
+        direction: ltr;
+    }
+
+    .aboutus-1 {
+        width: 80% !important;
+        overflow: visible !important;
+        position: relative;
+        margin-bottom: -1em;
+
+    }
+
+    .aboutus-1>img {
+        width: 20em !important;
+        position: relative;
+        left: 3em;
+        z-index: 0;
+        border-top-right-radius: 20px !important;
+        border-top-left-radius: 20px !important;
+    }
+
+    .aboutus-2 {
+        width: 22em !important;
+        z-index: 99;
+        margin-bottom: 1em;
+    }
+
+    .donate-text {
+
+        width: 100% !important;
+
+    }
+
+    .ourteam {
+        flex-wrap: wrap;
+        padding: 1em !important;
+        justify-content: space-evenly !important;
+        margin-bottom: 2em;
+    }
+
+    .ourteam>div {
+        width: 8em !important;
+        height: 10em !important;
+        margin: 1em !important;
+    }
+
+    .ourteam>h1 {
+        margin-top: -1em;
+        margin-bottom: 1em;
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .review {
+        flex-wrap: wrap;
+    }
+
+    .review-img {
+        width: 100% !important;
+        position: relative;
+        top: 1.5em;
+    }
+
+    .review-img>img {
+        width: 20em !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+
+    }
+
+    .review-text {
+        width: 100% !important;
+        left: 0px !important;
+    }
+
+    .review-area {
+        width: 100% !important;
+    }
+
+    .donate-btn {
+        width: 0%;
+        margin-top: 2em;
+    }
+   
+
+    .navigation {
+        margin-top: 15em !important;
+        width: 100% !important;
+        margin-bottom: 3em;
+    }
+
+    .news-letter {
+        width: 100% !important;
+    }
+
+    .news-letter-input {
+        margin-left: 0% !important;
+        display: block;
+        margin: auto;
+    }
+
+    .news-letter>button {
+        margin-left: 0% !important;
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 30%;
+        margin-top: 2em;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+.social-links>a {
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+
+
+
+
+
+/* 2nd STATS DIV */
+
+.stats {
+    width: 100%;
+    height: 10em;
+    background-color: #00715d;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stats-item {
+    height: 10em;
+    width: 18em;
+    padding: 1em;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-div>img {
+    display: inline;
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
+    filter: invert(100%);
+    width: 3.5em;
+    height: 3.5em;
+    position: relative;
+    left: -20px;
+
+}
+
+.stats-item>.fdiv {
+    width: 100%;
+    background-color: rebeccapurple;
+    height: 12em;
+}
+
+.s-div>h4 {
+
+    font-size: 2.2em;
+    position: relative;
+
+    color: white;
+
+}
+
+.s-div>p {
+    display: inline;
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+
+
+
+/* SUPPORT COMMMNUNITY CODE */
+.support {
+    display: flex;
+    padding: 5em;
+}
+
+.support-1 {
+    width: 65%;
+}
+
+.support-1>h1 {
+    width: 80%;
+
+}
+
+.support-2 {
+    width: 35%;
+}
+
+.support-2>img {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    position: relative;
+    top: 6em;
+    left: 2em;
+
+}
+
+.support-1>h1 {
+    font-size: 4em;
+}
+
+.support-1>p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+}
+
+.support-images {
+    display: flex;
+}
+
+.support-divs {
+    height: 20em;
+    background-color: white;
+    width: 20em;
+    margin-left: 1em;
+}
+
+.support-divs>h2 {
+    padding: 0.5em;
+}
+
+.support-images>div>img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* -----------------
+ABOUT US
+----------------- */
+
+.aboutus {
+    display: flex;
+    padding: 5em;
+    position: relative;
+}
+
+.aboutus-1 {
+    width: 50%;
+    overflow: hidden;
+    direction: rtl;
+
+
+}
+
+.aboutus-1>img {
+    width: 30em;
+    border-radius: 20px;
+    height: 15em;
+    z-index: 0;
+    position: relative;
+    left: 4em;
+    /* position: relative;
+    left: 6em; */
+
+    /* position: absolute;
+    left: 16%;
+    top: 20px; */
+}
+
+.aboutus-2 {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em;
+    z-index: 99;
+    margin-left: -1em;
+}
+
+.aboutus-2>h1 {
+    margin-bottom: 1em;
+}
+
+.aboutus-2>hr {
+    margin-bottom: 1em;
+}
+
+.aboutus-2>a {
+    position: relative;
+    top: 1em;
+}
+
+
+
+/* OUR TEAM
+----------- */
+
+
+.ourteam {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+}
+
+.ourteam>div {
+    width: 14em;
+
+    height: 18em;
+}
+
+.our-txt {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.ourteam>div>h2,
+h5 {
+    text-align: center;
+}
+
+.ourteam>div>img {
+    border-radius: 20px;
+    width: 100%;
+    height: 80%;
+
+}
+
+
+
+
+
+
+/* REVIEW SECTION CODE */
+
+.review {
+    display: flex;
+    justify-content: baseline;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.review-h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.review-img>img {
+    width: 25em;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    z-index: 99;
+}
+
+.review-img {
+    width: 50%;
+
+    direction: rtl;
+}
+
+.review-text {
+    width: 50%;
+    position: relative;
+    left: -20px;
+}
+
+.review-area {
+    padding: 2em;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.review-area>h4 {
+    margin-top: 1em;
+}
+
+
+
+
+
+/* DONATE NOW SECTION CODE */
+
+.donate {
+    display: flex;
+    background-color: #00715d;
+    padding: 4em;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.donate-text {
+    width: 70%;
+
+}
+
+.donate-text>h1 {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.donate-btn {
+    width: 30%;
+    padding-left: 3em;
+}
+
+.donate-btn>button {
+    width: 10em;
+    height: 5em;
+    border: none;
+    background-color: #fdd65b;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.donate-btn>button:hover
+{
+    background-color: white;
+    color: #00715d;
+}
+
+
+/* Footer */
+
+footer {
+
+    display: flex;
+    padding: 2em;
+    margin-top: 3em;
+    width: 100%;
+    height: 15em;
+
+}
+
+footer>.news-letter {
+    width: 50%;
+
+    height: 50%;
+}
+
+.news-letter-input {
+    text-align: center;
+
+}
+
+.news-letter>h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.news-letter>h5 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.news-letter>input {
+    background-color: white;
+    width: 22em;
+    height: 4em;
+    border: none;
+
+    margin-left: 8em;
+}
+
+.news-letter>button {
+    width: 8em;
+    height: 4em;
+    background-color: #285a22;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: -2em;
+    font-family: 'Noto Sans', sans-serif;
+}
+.news-letter>button:hover
+{
+    background-color: #fdd65b;
+    color:black;
+    cursor: grab;
+}
+
+
+.navigation {
+    height: 100%;
+
+    padding-left: 2em;
+    width: 50%;
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-columns: repeat(3, 3fr);
+    gap: 2em;
+}
+
+.navigation>div>ol>li {
+    margin-top: 1em;
+    list-style-type: none;
+}
