@@ -121,7 +121,8 @@ header>nav>ul {
     border: 1px solid #00715d;
     border-radius: 50px;
     width: 8em;
-    height: 1.5em;
+    height: 2em;
+    padding: 10px;
     font-size: 0.8em!important;
     font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
@@ -137,12 +138,12 @@ header>nav>ul {
     {
         position: relative;
         top: 1em;
-        width: 24em;
+        width: 20em;
         height: 20em;
         background:white;
         border-radius: 10px;
-        left: -21em;
-        display: block !important;
+        left: -19em;
+        display: block!important;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     }
 
@@ -356,9 +357,18 @@ header>nav>ul {
     {
         width: 100%!important;
     }
+    .aboutus-1{
+        left: -1em;
+    }
     .review
     {
         width: 100%!important;
+    }
+    .review-img
+    {
+        
+        /* position: relative!important;
+        left: -2em!important; */
     }
     .donate
     {
@@ -389,12 +399,13 @@ header>nav>ul {
     .review
     {
         position: relative;
-        left: 0.2em;
+        left: -1em;
     }
 
     .review-img
     {
-        left: -2em;
+        position: relative;
+        left: -3em;
     }
     .aboutus-1>img
     {
@@ -449,9 +460,14 @@ header>nav>ul {
     {
         width: 107%!important;
     }
+    .review-img>img
+    {
+        position: relative!important;
+        left: 1.7em!important;
+    }
     .donate
     {
-        width: 107%!important;
+       width: 107%!important;
     }
     footer
     {
@@ -460,6 +476,8 @@ header>nav>ul {
     .navigation
     {
         width: 107%!important;
+        position: relative;
+        left: -2em;
     }
     .ourteam
     {
@@ -515,7 +533,8 @@ header>nav>ul {
         flex-wrap: wrap;
         position: relative;
 
-        left: -1em;
+        left:-3em;
+        top: -2em;
     }
 
     .support-divs {
@@ -550,7 +569,7 @@ header>nav>ul {
         width: 20em !important;
         height: 213px;
         position: relative;
-        left: 3em;
+        left: 4em!important;
         z-index: 0;
         border-radius: 0px!important;
         border-bottom-left-radius: 0px !important;
@@ -600,16 +619,21 @@ header>nav>ul {
         width: 100% !important;
         position: relative;
         top: 1.5em;
+        
     }
 
     .review-img>img {
         width: 20em !important;
         border-bottom-left-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
+        position: relative;
+        left: 0.8em;
 
     }
 
     .review-text {
+        display: block;
+        z-index: 99;
         width: 100% !important;
         left: 0px !important;
     }
