@@ -56,7 +56,7 @@ header>nav>div>li {
 
 header>nav {
     position: relative;
-    left: 10%;
+    left: 5;
 }
 
 header>nav>ul>div>li>a {
@@ -79,13 +79,20 @@ header>nav>ul {
 
     display: inline;
 }
+.burger-mobile
+{
+    display: none;
+}
 
 /* #ul-li
 {
     display: none;
 } */
 
-
+.mobile-li
+{
+    display: none;
+}
 
 @media (max-width:768px) {
     header>span>img {
@@ -107,11 +114,29 @@ header>nav>ul {
         top: 1em;
     }
    
-
+.nav-mobile-s>ul>li
+{
+    background-color: #00715d;
+    color: white;
+    border: 1px solid #00715d;
+    border-radius: 50px;
+    width: 8em;
+    height: 1.5em;
+    font-size: 0.8em!important;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 2em;
+    display: block;
+    margin: auto;
+}
+.nav-mobile-s>ul
+{
+    padding-top: 2em;
+}
     .nav-mobile-s
     {
         position: relative;
-        
+        top: 1em;
         width: 24em;
         height: 20em;
         background:white;
@@ -305,6 +330,149 @@ header>nav>ul {
     top: 5%;
     margin: auto;
     font-size: 1.3em;
+}
+
+/* //Responsive code base  for SAMSUNG GALXY S20 ULTRA*/
+
+@media (max-width:915px) {
+
+    header
+    {
+        width: 100%!important;
+    }
+    .main-sec
+    {
+        width: 100%!important;
+    }
+    .stats
+    {
+        width: 100%!important;
+    }
+    .support
+    {
+        width: 100%!important;
+    }
+    .aboutus
+    {
+        width: 100%!important;
+    }
+    .review
+    {
+        width: 100%!important;
+    }
+    .donate
+    {
+        width: 100%!important;
+    }
+    footer
+    {
+        width: 100%!important;
+    }
+    .navigation
+    {
+        width: 100%!important;
+    }
+    .ourteam
+    {
+        width: 100%!important;
+    }
+
+    .burger-mobile>i::before
+    {
+        position: relative;
+        left: 0.5em;
+    }    
+    .social-links
+    {
+        margin-bottom: 2em!important;
+    }
+    .review
+    {
+        position: relative;
+        left: 0.2em;
+    }
+
+    .review-img
+    {
+        left: -2em;
+    }
+    .aboutus-1>img
+    {
+        left: 3em!important;
+    }
+    
+}
+
+
+
+/* //Responsive code base  for SAMSUNG GALXY S8*/
+@media (max-width:740px) {
+    header
+    {
+        width: 107%!important;
+    }
+    .main-sec
+    {
+        width: 107%!important;
+    }
+    .stats
+    {
+        width: 107%!important;
+    }
+    .support
+    {
+        width: 107%!important;
+    }
+    .support-1>h1
+    {
+        position: relative;
+        top: -1em;
+        left: -1em;
+    }
+    .support-1>hr
+    {
+        position: relative;
+        left: -2em;
+        top: -2em;
+    }
+    .support-1>p
+    {
+        position: relative;
+        left: -1em;
+        top: -2em;
+    }
+    .aboutus
+    {
+        width: 107%!important;
+    }
+    .review
+    {
+        width: 107%!important;
+    }
+    .donate
+    {
+        width: 107%!important;
+    }
+    footer
+    {
+        width: 107%!important;
+    }
+    .navigation
+    {
+        width: 107%!important;
+    }
+    .ourteam
+    {
+        width: 107%!important;
+    }
+    .social-links>a
+    {
+        margin-left: 0.4em;
+        font-size: 0.8em;
+        position: relative;
+        left: 2em;
+    }
+    
 }
 
 /* //Responsive code base */
